@@ -1,3 +1,5 @@
+import type { Paginated } from './pagination';
+
 export type NewsItem = {
   id: string;
   title: string;
@@ -16,3 +18,5 @@ export type RssSource = {
   domain: string;
   feedUrl: string;
 };
+
+export type NewsListResponse = Paginated<NewsItem>;
