@@ -25,24 +25,17 @@ defineEmits<{
   justify-content: center;
   width: 40px;
   height: 40px;
-  padding: 0;
-  border: none;
   border-radius: 100%;
-  background: #fff;
-  box-shadow:
-    0 1px 4px 0 rgba(0, 0, 0, 0.05),
-    0 2px 4px 0 rgba(0, 0, 0, 0.05);
-  cursor: pointer;
+  background: var(--color-surface);
+  box-shadow: var(--shadow);
 }
 
 .reload-button:hover {
-  box-shadow:
-    0 1px 4px 0 rgba(0, 0, 0, 0.08),
-    0 2px 6px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-hover);
 }
 
 .reload-button:focus-visible {
-  outline: 2px solid #0029ff;
+  outline: 2px solid var(--color-accent);
   outline-offset: 2px;
 }
 
@@ -58,9 +51,5 @@ defineEmits<{
   to {
     transform: rotate(360deg);
   }
-}
-
-.reload-button:disabled {
-  cursor: default;
 }
 </style>
