@@ -97,6 +97,19 @@ a {
   margin: 0 auto;
 }
 
+@media (max-width: 1099px) {
+  .container {
+    max-width: none;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .news-tile {
+    padding: 22px;
+  }
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;

@@ -62,4 +62,12 @@ defineEmits<{
   font-size: 36px;
   line-height: 1.2;
 }
+
+@media (max-width: 767px) {
+  .header__bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+}
 </style>

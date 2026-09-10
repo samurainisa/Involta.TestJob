@@ -20,16 +20,20 @@ defineProps<{
 
 <style scoped>
 .feed {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   gap: 20px;
 }
 
-.feed--cards {
-  flex-wrap: wrap;
+.feed > * {
+  grid-column: span 12;
+  min-width: 0;
 }
 
-.feed--lines {
-  flex-direction: column;
+@media (min-width: 768px) {
+  .feed--cards > * {
+    grid-column: span 6;
+  }
 }
 
 .feed__empty {

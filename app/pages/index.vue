@@ -91,8 +91,16 @@ async function setPage(page: number) {
 
 <style scoped>
 .page {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
   padding-top: 40px;
   padding-bottom: 50px;
+}
+
+.page > * {
+  grid-column: 1 / -1;
+  min-width: 0;
 }
 
 .page__toolbar {
@@ -105,5 +113,11 @@ async function setPage(page: number) {
 
 .page__pagination {
   margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+  .page {
+    padding-top: 36px;
+  }
 }
 </style>

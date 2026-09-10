@@ -58,6 +58,7 @@ function clear() {
 .search {
   position: relative;
   width: 321px;
+  max-width: 100%;
   height: 40px;
 }
 
@@ -108,5 +109,11 @@ function clear() {
 .search__button {
   right: 0;
   width: 40px;
+}
+
+@media (max-width: 767px) {
+  .search {
+    width: 100%;
+  }
 }
 </style>

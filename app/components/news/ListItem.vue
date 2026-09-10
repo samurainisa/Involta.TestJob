@@ -46,8 +46,7 @@ defineProps<{
 .row {
   display: flex;
   gap: 30px;
-  width: 1060px;
-  max-width: 100%;
+  width: 100%;
   min-height: 189px;
 }
 
@@ -75,5 +74,18 @@ defineProps<{
 
 .row__more {
   margin-top: 12px;
+}
+
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+    gap: 20px;
+    min-height: 435px;
+  }
+
+  .row__image {
+    width: 100%;
+    height: 166px;
+  }
 }
 </style>
