@@ -35,7 +35,7 @@ defineProps<{
 .card {
   display: flex;
   flex-direction: column;
-  width: 520px;
+  width: 100%;
   min-height: 256px;
 }
 

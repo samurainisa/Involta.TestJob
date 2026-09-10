@@ -43,6 +43,7 @@ function onPageClick(item: number | 'ellipsis') {
 .pagination {
   font-size: 18px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 24px;

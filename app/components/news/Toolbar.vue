@@ -29,4 +29,10 @@ defineEmits<{
   justify-content: space-between;
   gap: 24px;
 }
+
+@media (max-width: 767px) {
+  .toolbar {
+    flex-wrap: wrap;
+  }
+}
 </style>
